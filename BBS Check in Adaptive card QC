@@ -5,9 +5,14 @@
     "body": [
         {
             "type": "TextBlock",
-            "text": "BBS_PS팀 Daily Check-in",
+            "text": "BBS QC Chemical  Daily Check-in",
             "wrap": true,
             "size": "Large"
+        },
+        {
+            "type": "TextBlock",
+            "text": "월 ~ 금 오후 3시 ",
+            "wrap": true
         },
         {
             "type": "ColumnSet",
@@ -44,8 +49,8 @@
                     "items": [
                         {
                             "type": "TextBlock",
-                            "text": "스트레칭 3회",
-                            "wrap": true
+                            "wrap": true,
+                            "text": "시약차 사용"
                         }
                     ]
                 },
@@ -56,7 +61,7 @@
                         {
                             "type": "Input.Text",
                             "placeholder": "0-100",
-                            "id": "stretching"
+                            "id": "cart"
                         }
                     ]
                 }
@@ -71,7 +76,7 @@
                     "items": [
                         {
                             "type": "TextBlock",
-                            "text": "사내차량속도 10km",
+                            "text": "우측 통행",
                             "wrap": true
                         }
                     ]
@@ -83,7 +88,7 @@
                         {
                             "type": "Input.Text",
                             "placeholder": "0-100",
-                            "id": "carspeed"
+                            "id": "walkright"
                         }
                     ]
                 }
@@ -99,7 +104,7 @@
                         {
                             "type": "TextBlock",
                             "wrap": true,
-                            "text": "실외 슬리퍼 신지않기"
+                            "text": "Speak Up"
                         }
                     ]
                 },
@@ -109,7 +114,7 @@
                     "items": [
                         {
                             "type": "Input.Text",
-                            "id": "slippers",
+                            "id": "speakup",
                             "placeholder": "0-100"
                         }
                     ]
