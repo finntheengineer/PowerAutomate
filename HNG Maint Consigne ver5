@@ -1,0 +1,385 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "HNG Maintenance Consigne",
+            "wrap": true,
+            "size": "Large",
+            "weight": "Bolder",
+            "color": "Accent"
+        },
+        {
+            "type": "TextBlock",
+            "text": "4AM-6AM / 12PM-2PM / 8PM-10PM Auto Generate ",
+            "wrap": true,
+            "isSubtle": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Date",
+                            "horizontalAlignment": "Left",
+                            "size": "Small",
+                            "spacing": "None",
+                            "maxLines": 4
+                        }
+                    ],
+                    "spacing": "Small",
+                    "horizontalAlignment": "Left",
+                    "verticalContentAlignment": "Center",
+                    "backgroundImage": {
+                        "verticalAlignment": "Center"
+                    }
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Input.Date",
+                            "id": "date input",
+                            "spacing": "None",
+                            "isRequired": true,
+                            "label": " ",
+                            "errorMessage": "required"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Équipe",
+                            "wrap": true,
+                            "fontType": "Default",
+                            "size": "Small",
+                            "color": "Default"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Input.ChoiceSet",
+                            "choices": [
+                                {
+                                    "title": "Matin",
+                                    "value": "Matin"
+                                },
+                                {
+                                    "title": "Am",
+                                    "value": "Am"
+                                },
+                                {
+                                    "title": "Nuit",
+                                    "value": "Nuit"
+                                }
+                            ],
+                            "placeholder": " ",
+                            "id": "Shift input",
+                            "label": " ",
+                            "errorMessage": " required",
+                            "isRequired": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "État",
+                            "wrap": true,
+                            "size": "Small",
+                            "color": "Default"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Input.ChoiceSet",
+                            "choices": [
+                                {
+                                    "title": "Vert",
+                                    "value": "Vert"
+                                },
+                                {
+                                    "title": "Jaune",
+                                    "value": "Jaune"
+                                },
+                                {
+                                    "title": "Rouge",
+                                    "value": "Rouge"
+                                }
+                            ],
+                            "placeholder": " ",
+                            "errorMessage": "required",
+                            "id": "status input",
+                            "isRequired": true,
+                            "label": " "
+                        }
+                    ],
+                    "id": " "
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "90px",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Safety",
+                            "wrap": true,
+                            "size": "Small"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "Input.Text",
+                            "placeholder": " ",
+                            "spacing": "None",
+                            "id": "safety input"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "ColumnSet",
+                            "columns": [
+                                {
+                                    "type": "Column",
+                                    "width": "90px",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Intervention Condi",
+                                            "wrap": true,
+                                            "size": "Small"
+                                        },
+                                        {
+                                            "type": "Input.ChoiceSet",
+                                            "choices": [
+                                                {
+                                                    "title": "IMA1",
+                                                    "value": "IMA1"
+                                                },
+                                                {
+                                                    "title": "IMA2",
+                                                    "value": "IMA2"
+                                                },
+                                                {
+                                                    "title": "UHLMANN",
+                                                    "value": "UHLMANN"
+                                                },
+                                                {
+                                                    "title": "PARTENA",
+                                                    "value": "PARTENA"
+                                                }
+                                            ],
+                                            "placeholder": "Select",
+                                            "id": "cond intervention choice"
+                                        }
+                                    ],
+                                    "id": "Cond"
+                                },
+                                {
+                                    "type": "Column",
+                                    "width": "stretch",
+                                    "items": [
+                                        {
+                                            "type": "Input.Text",
+                                            "placeholder": " ",
+                                            "id": "intervention cond input",
+                                            "isMultiline": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ColumnSet",
+                            "columns": [
+                                {
+                                    "type": "Column",
+                                    "width": "90px",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Intervention Fab",
+                                            "wrap": true,
+                                            "size": "Small"
+                                        },
+                                        {
+                                            "type": "Input.ChoiceSet",
+                                            "choices": [
+                                                {
+                                                    "title": "Bohle1",
+                                                    "value": "Bohle1"
+                                                },
+                                                {
+                                                    "title": "Bohle2",
+                                                    "value": "Bohle2"
+                                                },
+                                                {
+                                                    "title": "Glatt",
+                                                    "value": "Glatt"
+                                                },
+                                                {
+                                                    "title": "XL400",
+                                                    "value": "XL400"
+                                                },
+                                                {
+                                                    "title": "Fette",
+                                                    "value": "Fette"
+                                                }
+                                            ],
+                                            "placeholder": "Select",
+                                            "id": "fab intervention choice"
+                                        }
+                                    ],
+                                    "id": "Fab"
+                                },
+                                {
+                                    "type": "Column",
+                                    "width": "stretch",
+                                    "items": [
+                                        {
+                                            "type": "Input.Text",
+                                            "placeholder": " ",
+                                            "id": "intervention fab input",
+                                            "isMultiline": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ColumnSet",
+                            "columns": [
+                                {
+                                    "type": "Column",
+                                    "width": "90px",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Intervention Chewy",
+                                            "wrap": true,
+                                            "size": "Small"
+                                        },
+                                        {
+                                            "type": "Input.ChoiceSet",
+                                            "choices": [
+                                                {
+                                                    "title": "Extrudeur",
+                                                    "value": "Extrudeur"
+                                                },
+                                                {
+                                                    "title": "Melangeur",
+                                                    "value": "Melangeur"
+                                                },
+                                                {
+                                                    "title": "ABB Robot",
+                                                    "value": "ABB Robot"
+                                                }
+                                            ],
+                                            "placeholder": "Select",
+                                            "id": "chewy intervention choice"
+                                        }
+                                    ],
+                                    "id": "Condd"
+                                },
+                                {
+                                    "type": "Column",
+                                    "width": "stretch",
+                                    "items": [
+                                        {
+                                            "type": "Input.Text",
+                                            "placeholder": " ",
+                                            "id": "intervention chewy input",
+                                            "isMultiline": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ColumnSet",
+                            "columns": [
+                                {
+                                    "type": "Column",
+                                    "width": "90px",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Consigne / Divers",
+                                            "wrap": true,
+                                            "size": "Small"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Column",
+                                    "width": "stretch",
+                                    "items": [
+                                        {
+                                            "type": "Input.Text",
+                                            "placeholder": " ",
+                                            "id": "Consigne input",
+                                            "isMultiline": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ActionSet",
+                            "actions": [
+                                {
+                                    "type": "Action.Submit",
+                                    "title": "Submit",
+                                    "style": "positive"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "verticalContentAlignment": "Top"
+}
